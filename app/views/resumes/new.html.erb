@@ -1,0 +1,9 @@
+<h3> 投交履历到 <%= @job.title %> </h3>
+
+<hr>选择简历黑客，帮您修改简历，获得成功！
+
+<%= simple_form_for [@job, @resume] do |f| %>
+  <%= f.input :content %>
+    <%= f.input :attachment %>
+  <%= f.submit "送出" %>
+<% end %>

@@ -39,7 +39,7 @@ end
   def destroy
     @job = Job.find(params[:id])
 @job.destroy
-rediect_to admin_jobs_path
+redirect_to admin_jobs_path
 end
 def publish
   @job = Job.find(params[:id])
