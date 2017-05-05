@@ -1,7 +1,7 @@
 class Admin::JobsController < ApplicationController
 
 before_action :authenticate_user!, only: [:new, :create, :update, :edit, :destroy]
-before_action :requier_is_admin
+before_action :require_is_admin
   layout "admin"
 
 
